@@ -7,9 +7,11 @@ def main():
     return file_contents
 
 def count(args):
-    args = args.split()
-    print(len(args))
+    count = 0
+    args = args.split(' ')
+    for word in args:
+        count += 1
+        print(count, word)
 
 results = main()
-count(results)
-
+count(results) 
